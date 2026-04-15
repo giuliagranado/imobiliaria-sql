@@ -1,2 +1,22 @@
-# imobiliaria-sql
-Banco de Dados fictício para gestão de imobiliária, com tabelas e consultas SQL
+# Projetos SQL - Imobiliária
+Banco de Dados fictício para gestão de imobiliária, com tabelas e consultas SQL.
+
+## 📂 Estrutura
+- **DDL/** → Scripts de criação de tabelas, índices e constraints.
+- **DML/** → Scripts de inserção, atualização e exclusão de dados.
+- **Queries/** → Consultas para relatórios e análises.
+
+## 🚀 Como usar
+1. Crie um banco de dados chamado `imobiliaria`.
+2. Execute os scripts da pasta `DDL` para criar as tabelas.
+3. Execute os scripts da pasta `DML` para popular o banco com dados fictícios.
+4. Rode as consultas da pasta `Queries` para gerar relatórios, como:
+   - Listar apartamentos disponíveis por bairro.
+   - Calcular média de aluguel por região.
+   - Mostrar proprietários com mais de 3 imóveis cadastrados.
+
+## 🔎 Exemplo de consulta
+```sql
+SELECT bairro, AVG(valor_aluguel) AS media_aluguel
+FROM apartamento
+GROUP BY bairro;
