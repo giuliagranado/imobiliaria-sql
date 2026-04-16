@@ -8,7 +8,7 @@ CREATE TABLE `total_apartamento_vw` (
 );
 
 -- Estrutura para vista `total_apartamento_vw`--
-DROP TABLE IF EXISTS `total_apartamento_vw`;
+DROP VIEW IF EXISTS `total_apartamento_vw`;
 
 CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `total_apartamento_vw`  AS 
 SELECT `apartamento`.`codigo_cond` AS `codigo_cond`, 
