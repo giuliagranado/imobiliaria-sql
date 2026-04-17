@@ -19,4 +19,4 @@ BEGIN
     RETURN taxa;
 end$$
 
-DELIMITER;
+DELIMITER ;

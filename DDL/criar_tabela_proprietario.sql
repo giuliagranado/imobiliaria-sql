@@ -4,5 +4,6 @@ CREATE TABLE `proprietario` (
   `rg` varchar(15) NOT NULL,
   `nome` varchar(80) DEFAULT NULL,
   `telefone` varchar(15) DEFAULT NULL,
-  `email` varchar(50) DEFAULT NULL
+  `email` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`rg`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
